@@ -1,0 +1,31 @@
+#observerElements{
+	margin: 0 auto;
+	width: 800px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.number{
+	margin:0 auto;
+	width: 100px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+}
+.button{
+	margin:20px auto;
+	width: 100px;
+	cursor: pointer;
+	background-color: #4CAF50; /* Green */
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
