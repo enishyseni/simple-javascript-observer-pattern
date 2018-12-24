@@ -1,4 +1,4 @@
-# Simple javascript observer pattern
+# Javascript observer pattern
 
 ### Learn javascript observer pattern through this example.
 
