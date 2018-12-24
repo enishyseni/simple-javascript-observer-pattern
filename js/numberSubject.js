@@ -1,14 +1,21 @@
 'use strict';
 
-export default class NumberModel {	
+export default class NumberSubject {	
 	constructor() {
 		this.currentNumber = 0;
 		this.observers = [];
 	}
 	
-	addObserver(o){
+	subscribe(o){
 		this.observers.push(o);
 		o.update(this);
+	}
+	
+	unsubscribe(o){
+		o.setAttribute("style", "background-color: #BBB;");
+		this.observers = this.observers.filter(function(el) {
+			return el.element.id != o.id;		
+		});
 	}
 	
 	notifyObservers(){

@@ -7,3 +7,5 @@
 
 ![img](screenshot.jpg)
 
+#### You can click on number displaying elements to unsubscribe from Subject.
+

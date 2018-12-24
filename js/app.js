@@ -1,40 +1,52 @@
 'use strict';
 
 // Imports
-import NumberModel from './numberModel.js';
+import NumberSubject from './numberSubject.js';
 import ElementObserver from './elementObserver.js';
 
-// Principals
-let mainNumber = new NumberModel();
-
-// Observers
-let homePageNumber = new ElementObserver('homepagenumber');
-let homePageNumber2 = new ElementObserver('homepagenumber2');
+// Subjects
+let mainNumber = new NumberSubject();
 
 // RegisterObservers
-mainNumber.addObserver(homePageNumber);
-mainNumber.addObserver(homePageNumber2);
+mainNumber.subscribe(new ElementObserver('homepagenumber'));
+mainNumber.subscribe(new ElementObserver('homepagenumber2'));
+mainNumber.subscribe(new ElementObserver('homepagenumber3'));
+
+
 
 // Global functions - declarations
-window.Advance = function (){
+window.Advance = function () {
 	mainNumber.incrementCurrentNumber();
 }
 
-let elementIndex = 3;
-window.AddElementAndSubscribeToObservable = function (){
+window.Unsubscribe = function () {
+	mainNumber.unsubscribe(this);
+}
+
+let elementIndex = 4; // There are already 3 sample elements defined in the DOM
+window.AddElementAndSubscribeToObservable = function () {
 	let elementId = "homepagenumber" + elementIndex;
 	
 	let observerElement = document.createElement('div');
 	observerElement.setAttribute("id", elementId);
 	observerElement.setAttribute("class", "number");	
+	//observerElement.onclick = "Unsubscribe()";
+	observerElement.addEventListener("click", window.Unsubscribe);
 	document.getElementById("observerElements").appendChild(observerElement);
 	
-	let observerToSubscribe = new ElementObserver(elementId);
-	mainNumber.addObserver(observerToSubscribe);
+	mainNumber.subscribe(new ElementObserver(elementId));
 	
 	elementIndex++;
 }
 
-window.LogState = function (){
+window.LogState = function () {
 	return mainNumber;
 }
+
+// Add event listeners to 3 sample DOM elements
+let element = document.getElementById('homepagenumber');
+element.addEventListener("click", window.Unsubscribe);
+element = document.getElementById('homepagenumber2');
+element.addEventListener("click", window.Unsubscribe);
+element = document.getElementById('homepagenumber3');
+element.addEventListener("click", window.Unsubscribe);

@@ -6,15 +6,24 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+#buttonsContainer{
+	margin: 0 auto;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 .number{
-	margin:0 auto;
+	margin:20px auto;
 	width: 100px;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 40px;
 	font-weight: bold;
-	color: black;
+	color: white;
+	background-color: #4CADEA;
+	border-radius: 10px;
 }
 .button{
 	margin:20px auto;
