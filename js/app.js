@@ -29,8 +29,7 @@ window.AddElementAndSubscribeToObservable = function () {
 	
 	let observerElement = document.createElement('div');
 	observerElement.setAttribute("id", elementId);
-	observerElement.setAttribute("class", "number");	
-	//observerElement.onclick = "Unsubscribe()";
+	observerElement.setAttribute("class", "number");
 	observerElement.addEventListener("click", window.Unsubscribe);
 	document.getElementById("observerElements").appendChild(observerElement);
 	
