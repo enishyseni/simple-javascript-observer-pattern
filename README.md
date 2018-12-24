@@ -5,5 +5,5 @@
 #### 1. Increment - button updates numberModel and notifies subscribed observables that a change has been made.
 #### 2. Add Observer Element - button creates new element and subscribes it to numberModel to be updated whenever a change happens.
 
-![img](screenshot.png)
+![img](screenshot.jpg)
 
