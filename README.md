@@ -7,7 +7,7 @@
 #### 3. Add Observer Element of type input - button creates new element of type input with one way binding and subscribes it to Subject to be updated whenever a change happens.
 #### 4. You can click on number displaying elements to unsubscribe from Subject.
 
-![img](screenshot.jpg)
+![img](screenshot1.jpg)
 
 #### Use LogState() in console to display details about Observable/Subject.
 
