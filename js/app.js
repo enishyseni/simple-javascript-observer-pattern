@@ -57,7 +57,7 @@ window.LogState = function () {
 	return mainNumber;
 }
 
-// Add event listeners to 3 sample DOM elements
+// Add Unsubscribe event listeners to 3 sample DOM elements
 let element = document.getElementById('homepagenumber');
 element.addEventListener("click", window.Unsubscribe);
 element = document.getElementById('homepagenumber2');
