@@ -12,6 +12,9 @@
 
 ![img](screenshot2.jpg)
 
+#### Meanwhile, while you are here, check out this cute NPM Package for serving static files from any folder/path on your filesystem:
+https://github.com/indexzero/http-server
+
 
 
 
