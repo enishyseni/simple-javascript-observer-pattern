@@ -11,7 +11,7 @@
 
 #### Use LogState() in console to display details about Observable/Subject.
 
-![img](screenshot2.jpg)
+![img](screenshotlogstate.jpg)
 
 #### Non DOM Values log observer type persists values in console after every 10 values received.
 
