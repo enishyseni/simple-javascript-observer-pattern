@@ -3,11 +3,13 @@
 // Imports
 import NumberSubject from './number.subject.js';
 import ElementObserver from './element.observer.js';
+import ValuesLogObserver from './valueslog.observer.js';
 
 // Subjects
 let mainNumber = new NumberSubject();
 
 // Register Observers
+mainNumber.subscribe(new ValuesLogObserver());
 mainNumber.subscribe(new ElementObserver('homepagenumber'));
 mainNumber.subscribe(new ElementObserver('homepagenumber2'));
 mainNumber.subscribe(new ElementObserver('homepagenumber3'));
@@ -22,13 +24,28 @@ window.Unsubscribe = function () {
 }
 
 let elementIndex = 4; // There are already 3 sample elements defined in the DOM
-window.AddElementAndSubscribeToObservable = function () {
+
+window.AddNonInputElementAndSubscribeToObservable = function () {
 	let elementId = "homepagenumber" + elementIndex;
 	
 	let observerElement = document.createElement('div');
 	observerElement.setAttribute("id", elementId);
-	observerElement.setAttribute("class", "number");
+	observerElement.setAttribute("class", "noninput");
 	observerElement.addEventListener("click", window.Unsubscribe);
+	document.getElementById("observerElements").appendChild(observerElement);
+	
+	mainNumber.subscribe(new ElementObserver(elementId));
+	
+	elementIndex++;
+}
+
+window.AddInputElementAndSubscribeToObservable = function () {
+	let elementId = "homepagenumber" + elementIndex;
+	
+	let observerElement = document.createElement('input');
+	observerElement.setAttribute("id", elementId);
+	observerElement.setAttribute("class", "input");
+	//observerElement.addEventListener("click", window.Unsubscribe);
 	document.getElementById("observerElements").appendChild(observerElement);
 	
 	mainNumber.subscribe(new ElementObserver(elementId));

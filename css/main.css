@@ -1,3 +1,6 @@
+*{
+	font-family: sans-serif;
+}
 #observerElements{
 	margin: 0 auto;
 	width: 800px;
@@ -8,12 +11,13 @@
 }
 #buttonsContainer{
 	margin: 0 auto;
-	width: 300px;
+	width: 900px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	align-items: flex-start;
 }
-.number{
+.noninput{
 	margin:20px auto;
 	width: 100px;
 	padding: 15px 32px;
@@ -25,9 +29,21 @@
 	background-color: #4CADEA;
 	border-radius: 10px;
 }
-.button{
+.input{
 	margin:20px auto;
 	width: 100px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: bold;
+	color: #000;
+	background-color: #FFF;
+	border-radius: 10px;
+}
+.button{
+	margin:20px auto;
+	width: 125px;
 	cursor: pointer;
 	background-color: #4CAF50; /* Green */
 	border: none;
