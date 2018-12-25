@@ -1,8 +1,8 @@
 'use strict';
 
 // Imports
-import NumberSubject from './numberSubject.js';
-import ElementObserver from './elementObserver.js';
+import NumberSubject from './number.subject.js';
+import ElementObserver from './element.observer.js';
 
 // Subjects
 let mainNumber = new NumberSubject();
