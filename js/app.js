@@ -8,7 +8,7 @@ import ValuesLogObserver from './valueslog.observer.js';
 // Subjects
 let mainNumber = new NumberSubject();
 
-// Register Observers
+// Subscribe Observers
 mainNumber.subscribe(new ValuesLogObserver());
 mainNumber.subscribe(new ElementObserver('homepagenumber'));
 mainNumber.subscribe(new ElementObserver('homepagenumber2'));
