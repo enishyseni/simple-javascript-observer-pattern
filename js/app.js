@@ -12,8 +12,6 @@ mainNumber.subscribe(new ElementObserver('homepagenumber'));
 mainNumber.subscribe(new ElementObserver('homepagenumber2'));
 mainNumber.subscribe(new ElementObserver('homepagenumber3'));
 
-
-
 // Global functions - declarations
 window.Advance = function () {
 	mainNumber.incrementCurrentNumber();
