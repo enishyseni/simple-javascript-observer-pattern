@@ -1,11 +1,11 @@
-# Javascript observer pattern
+# Javascript observer pattern (ES6)
 
 ### Learn javascript observer pattern through this example.
 
-#### 1. Increment - button updates Subject and notifies subscribed observables that a change has been made.
-#### 2. Add Observer Element of type non-input - button creates new element of type non-input (div) and subscribes it to Subject to be updated whenever a change happens.
-#### 3. Add Observer Element of type input - button creates new element of type input with one way binding and subscribes it to Subject to be updated whenever a change happens.
-#### 4. You can click on number displaying elements to unsubscribe from Subject.
+#### 1. Increment - button updates Observable/Subject and notifies subscribed observables that a change has been made.
+#### 2. Add Observer Element of type non-input - button creates new element of type non-input (div) and subscribes it to Observable/Subject to be updated whenever a change happens.
+#### 3. Add Observer Element of type input - button creates new element of type input with one way binding and subscribes it to Observable/Subject to be updated whenever a change happens.
+#### 4. You can click on number displaying elements to unsubscribe from Observable/Subject.
 
 ![img](screenshot1.jpg)
 
