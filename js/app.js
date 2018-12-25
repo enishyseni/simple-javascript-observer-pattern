@@ -7,7 +7,7 @@ import ElementObserver from './elementObserver.js';
 // Subjects
 let mainNumber = new NumberSubject();
 
-// RegisterObservers
+// Register Observers
 mainNumber.subscribe(new ElementObserver('homepagenumber'));
 mainNumber.subscribe(new ElementObserver('homepagenumber2'));
 mainNumber.subscribe(new ElementObserver('homepagenumber3'));
