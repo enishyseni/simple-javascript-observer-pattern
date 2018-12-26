@@ -41,6 +41,18 @@
 	background-color: #FFF;
 	border-radius: 10px;
 }
+.inputtwoway{
+	margin:20px auto;
+	width: 100px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: bold;
+	color: #F00;
+	background-color: #FFF;
+	border-radius: 10px;
+}
 .button{
 	margin:20px auto;
 	width: 125px;

@@ -36,6 +36,11 @@ export default class NumberSubject {
 		this.notifyObservers();
 	}
 	
+	setValue(value){
+		this.currentNumber = value;
+		this.notifyObservers();
+	}
+	
 	getState(){
 		return this.currentNumber;
 	}

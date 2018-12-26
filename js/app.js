@@ -45,7 +45,24 @@ window.AddInputElementAndSubscribeToObservable = function () {
 	let observerElement = document.createElement('input');
 	observerElement.setAttribute("id", elementId);
 	observerElement.setAttribute("class", "input");
-	//observerElement.addEventListener("click", window.Unsubscribe);
+	document.getElementById("observerElements").appendChild(observerElement);
+	
+	mainNumber.subscribe(new ElementObserver(elementId));
+	
+	elementIndex++;
+}
+
+window.TwoWayBinding = function () {
+	mainNumber.setValue(this.value);
+}
+
+window.AddInputElementWithTwoWayBindingAndSubscribeToObservable = function () {
+	let elementId = "homepagenumber" + elementIndex;
+	
+	let observerElement = document.createElement('input');
+	observerElement.setAttribute("id", elementId);
+	observerElement.setAttribute("class", "inputtwoway");
+	observerElement.addEventListener("keyup", window.TwoWayBinding);
 	document.getElementById("observerElements").appendChild(observerElement);
 	
 	mainNumber.subscribe(new ElementObserver(elementId));

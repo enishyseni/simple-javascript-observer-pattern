@@ -6,8 +6,9 @@
 #### 2. Add Observer Element of type non-input - button creates new element of type non-input (div) and subscribes it to Observable/Subject to be updated whenever a change happens.
 #### 3. Add Observer Element of type input - button creates new element of type input with one way binding and subscribes it to Observable/Subject to be updated whenever a change happens.
 #### 4. You can click on number displaying elements to unsubscribe from Observable/Subject.
+#### 5. Inputs with red numbers are two way binding inputs, if you change value of it all other observables will be updated with the given value.
 
-![img](screenshot1.jpg)
+![img](screenshotsample.jpg)
 
 #### Use LogState() in console to display details about Observable/Subject.
 
