@@ -1,12 +1,12 @@
 'use strict';
 
 // Imports
-import NumberSubject from './number.subject.js';
+import SimpleValueSubject from './simplevalue.subject.js';
 import ElementObserver from './element.observer.js';
 import ValuesLogObserver from './valueslog.observer.js';
 
 // Subjects
-let mainNumber = new NumberSubject();
+let mainNumber = new SimpleValueSubject();
 
 // Subscribe Observers
 mainNumber.subscribe(new ValuesLogObserver());

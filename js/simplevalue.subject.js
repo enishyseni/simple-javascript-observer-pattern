@@ -1,6 +1,6 @@
 'use strict';
 
-export default class SimpleValueSubject {	
+export default class NumberSubject {	
 	constructor() {
 		this.currentNumber = 0;
 		this.observers = [];
